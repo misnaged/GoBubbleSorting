@@ -7,7 +7,6 @@ import (
 var ab = []int{0, 3, 8, 7, 2, 1, 5, 4, 9, 6}
 
 func Bubb() {
-	fmt.Println(ab)
 
 	for i, _ := range ab {
 
@@ -23,10 +22,10 @@ func Bubb() {
 		}
 
 	}
-	fmt.Println(ab)
 
 }
 func main() {
+	fmt.Println(ab)
 	for i, _ := range ab {
 		if i == len(ab) {
 			break
@@ -38,5 +37,5 @@ func main() {
 		}
 
 	}
-
+	fmt.Println(ab)
 }
