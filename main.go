@@ -16,26 +16,17 @@ func Bubb() {
 			break
 		}
 		if ab[i] > ab[i2] {
-
 			ab[i], ab[i2] = ab[i2], ab[i]
-
+			Bubb()
 		}
-
 	}
 
 }
 func main() {
 	fmt.Println(ab)
-	for i, _ := range ab {
-		if i == len(ab) {
-			break
-		}
-		ab3 := append(ab[:i], ab[i:]...)
 
-		if ab3[i] == ab[i] {
-			Bubb()
-		}
+	Bubb()
 
-	}
 	fmt.Println(ab)
 }
+
